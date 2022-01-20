@@ -8,7 +8,7 @@ Automated scenarios are tagged using @automated and manual scenarios are tagged 
 **Running from CLI:**
 
 2. The project can be run as a cucumber feature from IDE or can be initialised using a maven command. 
-"**mvn clean test**" will run the tests from CLI.
+"**mvn clean test -Dcucumber.options='--tags @automated'**" will run only the automated tagged features from CLI.
 
 3. System.getProperty("browser") will be getting the browser property. 
 The same can be set using CLI to run test on chrome or firefox. 
